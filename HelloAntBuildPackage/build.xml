@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+   <project name="Hello World Project"  basedir="." default="build-jar">
+   <property name="src.dir" value="src"/>
+   <property name="target.dir" value="target"/>
+   <property name="lib.dir" value="lib"/>
+   <property name="build.dir" value="${target.dir}"/>
+   <property name="version" value="${build.num}"/>
+   
+   <path id="master-classpath">
+   <fileset dir="${lib.dir}">
+      <include name="*.jar"/>
+   </fileset>
+   <pathelement path="${build.dir}"/>
+   </path>
+   
+   <target name="clean" description="Clean output directories">
+   <delete>
+      <fileset dir="${build.dir}">
+         <include name="**/*.class"/>
+      </fileset>
+	</delete>
+	</target>
+	
+	<target name="build" depends="clean" description="Compile main source tree java files">
+   <mkdir dir="${build.dir}"/>
+   <javac destdir="${build.dir}" source="1.7" target="1.7" debug="true"
+      deprecation="false" optimize="false" failonerror="true" includeantruntime="false">
+      <src path="${src.dir}"/>
+      <classpath refid="master-classpath"/>
+   </javac>
+   </target>
+   
+   <pathconvert property="libs.project" pathsep=" "> 
+     <mapper>
+       <chainedmapper>
+         <flattenmapper />
+         <globmapper from="*" to="lib/*" />
+       </chainedmapper>
+     </mapper>
+     <path>
+       <fileset dir="lib">
+         <include name="**/*.jar" />
+       </fileset>
+     </path>
+   </pathconvert>
+   
+   <target name="build-jar" depends="build">
+   <jar destfile="target/HelloWorld-${now}.jar"
+      basedir="${build.dir}"
+      includes="**/HelloWorld.class"
+      >
+      <manifest>
+         <attribute name="Main-Class" value="com.yabou.HelloWorld"/>
+         <attribute name="Class-Path" value="${libs.project}"/>
+      </manifest>
+   </jar>
+	</target>
+   	
+	<tstamp>
+   	      <format property="now" pattern="yyyyMMdd_HHmmsssss"  locale="cn,CN"/>
+   	</tstamp>
+   	
+</project>
