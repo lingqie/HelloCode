@@ -1,0 +1,7 @@
+<suite name="jpa-wrapper">
+	<test verbose="2" name="jpa-wrapper-tests" annotations="JDK">		
+		<packages>
+			<package name="com.yabou.jpa" />			
+		</packages>		
+	</test>
+</suite>

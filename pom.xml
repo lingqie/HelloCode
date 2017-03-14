@@ -8,6 +8,7 @@
   	<module>HelloMavenCustomPackage</module>
   	<module>HelloAntBuildPackage</module>
   	<module>WicketTest</module>
+  	<module>jpa-wrapper</module>
   	<module>aigisGsonGenerder</module>
   </modules>
   
