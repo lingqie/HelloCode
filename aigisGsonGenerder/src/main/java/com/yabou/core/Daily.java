@@ -7,8 +7,9 @@ public class Daily {
 	private String dailyJPName;
 	private List<Mission> missions;
 	
-	public Daily(String JpName) {
+	public Daily(String JpName,int no) {
 		this.dailyJPName=JpName;
+		this.no=no;
 	}
 	public int getNo() {
 		return no;

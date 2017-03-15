@@ -1,5 +1,6 @@
 package com.yabou.core;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -7,42 +8,54 @@ import com.google.gson.Gson;
 
 public class AigisCharGsonGenerder {
 	private List<Daily> dailys;
-	private static Item tieshengling;
-	private static Item tongshengling;
-	private static Item yinshengling;
-	private static Item jinshengling;
-	private static Item baishengling;
-	private static Item heishengling;
-	private static Char 男银兵;
-	private static Char 青梅弓;
+	private static Char tieshengling;
+	private static Char tongshengling;
+	private static Char yinshengling;
+	private static Char jinshengling;
+	private static Char baishengling;
+	private static Char heishengling;
+	private static Char nanyinbing;
+	private static Char qingmeigong;
+	private static Char juanmaobing;
+	private static ArrayList<Daily> dailyList;
 	
 	public static void main(String[] args) {
 		Gson gson = new Gson();
-		tieshengling = new Item(1,"铁圣灵",1);
-		tongshengling = new Item(2,"铜圣灵",1);
-		yinshengling = new Item(3,"银圣灵",1);
-		jinshengling = new Item(4,"金圣灵",1);
-		baishengling = new Item(5,"白圣灵",1);
-		heishengling = new Item(6,"黑圣灵",1);
+		tieshengling = new Char("001","铁圣灵",CharClass.圣灵);
+		tongshengling = new Char("002","铜圣灵",CharClass.圣灵);
+		yinshengling = new Char("003","银圣灵",CharClass.圣灵);
+		jinshengling = new Char("004","金圣灵",CharClass.圣灵);
+		baishengling = new Char("005","白圣灵",CharClass.圣灵);
+		heishengling = new Char("006","黑圣灵",CharClass.圣灵);
 		
-		Item baitong=new Item(4,"白桶",1);
+		Char baitong=new Char("007","白桶",CharClass.桶,1);
 		
-		Item moshui1J2=new Item(1,"魔水晶",2);
-		Item moshui2J2=new Item(2,"魔水晶*2",2);
-		Item moshui3J2=new Item(3,"魔水晶*3",2);	
+		Char moshui1J2=new Char("008","魔水晶",CharClass.魔水晶,2);
+		Char moshui2J2=new Char("009","魔水晶*2",CharClass.魔水晶,2);
+		Char moshui3J2=new Char("010","魔水晶*3",CharClass.魔水晶,2);	
 		
-		男银兵 = new Char(1,"傭兵クレイブ",CharClass.士兵);
-		青梅弓= new Char(2,"弓兵ダニエラ",CharClass.弓箭手);
+		Daily daily = new Daily("魔女を救え！",0);
+		Mission mission = new Mission("魔女の襲撃",20,2);
+		mission.setDropItems(Arrays.asList(SliverChar.傭兵クレイブ,SliverChar.ドワーフ戦士グスタフ,SliverChar.妖精郷の戦士ロザリー));
 		
-		Daily daily = new Daily("魔女を救え！");
-		Mission mission = new Mission("魔女を救え！：魔女の隠れ家",20,2);
-		mission.setDropItems(Arrays.asList(new Char(1,"",CharClass.士兵),moshui1J2));
-		Mission mission2 = new Mission("魔女を救え！：魔女の隠れ家",30,4);
-		mission.setDropItems(Arrays.asList(new Char(1,"银豆芽",CharClass.士兵),new Char(1,"",CharClass.士兵),moshui1J2));
+		Mission mission2 = new Mission("魔女の逆襲	",25,2);
+		mission2.setDropItems(Arrays.asList(SliverChar.傭兵クレイブ));
 		daily.setMissions(Arrays.asList(mission,mission2));
-		System.out.println(gson.toJson(daily));
-			
 		
+		
+		Daily daily2 = new Daily("魔女の娘",1);
+		Mission mission3 = new Mission("魔女の復活",20,2);
+		mission3.setDropItems(Arrays.asList(SliverChar.傭兵クレイブ,SliverChar.ドワーフ戦士グスタフ,SliverChar.妖精郷の戦士ロザリー));
+		
+		Mission mission4 = new Mission("魔女の夜	",25,2);
+		mission4.setDropItems(Arrays.asList(SliverChar.傭兵クレイブ,SliverChar.金色の盾ベルナール));
+		daily2.setMissions(Arrays.asList(mission3,mission4));
+		
+		dailyList = new ArrayList<Daily>();
+		dailyList.add(daily);
+		dailyList.add(daily2);
+		
+		System.out.println(gson.toJson(dailyList));
 		
 	}
 }

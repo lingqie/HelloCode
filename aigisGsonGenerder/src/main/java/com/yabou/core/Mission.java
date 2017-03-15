@@ -3,11 +3,10 @@ package com.yabou.core;
 import java.util.List;
 
 public class Mission {
-	private int no;
 	private int tiLi;
 	private int meiLi;
 	private String missionJPName;
-	private List<Object> dropItems;
+	private List<Char> dropItems;
 	
 	public Mission(String JpName,int tiLi,int meiLi) {
 		this.missionJPName=JpName;
@@ -15,12 +14,6 @@ public class Mission {
 		this.meiLi=meiLi;
 	}
 	
-	public int getNo() {
-		return no;
-	}
-	public void setNo(int no) {
-		this.no = no;
-	}
 	public int getTiLi() {
 		return tiLi;
 	}
@@ -40,13 +33,11 @@ public class Mission {
 		this.missionJPName = missionJPName;
 	}
 	
-	public List<Object> getDropItems() {
+	public List<Char> getDropItems() {
 		return dropItems;
 	}
-	public void setDropItems(List<Object> dropItems) {
+	public void setDropItems(List<Char> dropItems) {
 		this.dropItems = dropItems;
-	}
-	
-	
+	}	
 	
 }
