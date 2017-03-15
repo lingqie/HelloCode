@@ -55,7 +55,14 @@ public class AigisCharGsonGenerder {
 		dailyList.add(daily);
 		dailyList.add(daily2);
 		
-		System.out.println(gson.toJson(dailyList));
+		List<String> charClassList=new ArrayList<String>();
+		CharClass[] values = CharClass.values();
+		for (CharClass charClass : values) {
+			charClassList.add(charClass.name());
+		}
+		
+//		System.out.println(gson.toJson(dailyList));
+		System.out.println(gson.toJson(charClassList));
 		
 	}
 }
