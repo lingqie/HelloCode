@@ -16,7 +16,7 @@ public class IronChar {
 	final public static Char 一般兵A魔法 = new Char("113", "一般兵A【魔法】", CharClass.火球,"iron");
 	final public static Char 一般兵B魔法 = new Char("114", "一般兵B【魔法】", CharClass.火球,"iron");
 	final public static Char 海賊手下 = new Char("115", "海賊手下", CharClass.海贼,"iron");
-	final public static Char 鉄の聖霊 = new Char("116", "鉄の聖霊", CharClass.圣灵,"iron");
+	final public static Char 鉄の聖霊 = new Char("116", "鉄の聖霊", CharClass.铁圣灵,"iron");
 	
 
 }
