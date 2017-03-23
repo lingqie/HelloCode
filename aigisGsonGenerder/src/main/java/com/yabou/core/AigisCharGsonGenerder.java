@@ -93,9 +93,43 @@ public class AigisCharGsonGenerder {
 		
 		
 		
+		Daily daily9 = new Daily("暗黒騎士団の脅威",8);
+		daily9.setMissions(Arrays.asList(
+				createMission("宣戦布告",1,20,Arrays.asList(ItemChar.花束,ItemChar.魔水晶)),
+				createMission("闇の聖女",2,25,Arrays.asList(PlatinumChar.暗黒騎士ユリナ,SliverChar.鋼鉄の女レアン,ItemChar.花束,ItemChar.魔水晶)),
+				createMission("追撃戦",2,30,Arrays.asList(SliverChar.狂戦士フューネス,SliverChar.傭兵クレイブ,ItemChar.花束,ItemChar.魔水晶)),
+				createMission("暗黒の波動",3,35,Arrays.asList(PlatinumChar.暗黒騎士ユリナ,SliverChar.魔女カリオペ,ItemChar.花束,ItemChar.魔水晶)),
+				createMission("決戦 極級",6,60,Arrays.asList(PlatinumChar.暗黒騎士ユリナ,SliverChar.槍騎兵エレイン,ItemChar.花束,ItemChar.魔水晶))
+				));
+		
+		Daily daily10 = new Daily("暗黒舞踏会",9);
+		daily10.setMissions(Arrays.asList(
+				createMission("囚われた踊り子",1,20,Arrays.asList(PlatinumChar.情熱の踊り子ワルツ,IronChar.一般兵A,IronChar.一般兵A重装)),
+				createMission("闇に捧げられた円舞",2,25,Arrays.asList(PlatinumChar.情熱の踊り子ワルツ,SliverChar.金色の盾ベルナール,TongChar.王国重歩兵ラセル,ItemChar.魔水晶)),
+				createMission("狂奏の踊り子",3,30,Arrays.asList(PlatinumChar.情熱の踊り子ワルツ,SliverChar.傭兵クレイブ,TongChar.海賊マウロ,ItemChar.魔水晶)),
+				createMission("灼熱の舞台",5,40,Arrays.asList(PlatinumChar.情熱の踊り子ワルツ,SliverChar.癒し手ドルカ,SliverChar.槍騎兵エレイン,SliverChar.銀の聖霊)),
+				createMission("2つの旋律　極級",7,55,Arrays.asList(PlatinumChar.情熱の踊り子ワルツ,SliverChar.海賊ヴェロッテ,SliverChar.吸血鬼狩人フーリ,PlatinumChar.白金の聖霊)),
+				createMission("闇の舞踏会　神級",2,100,Arrays.asList(GoldChar.金の聖霊,PlatinumChar.白金の聖霊,BlackChar.黒の聖霊))
+				));
+		
+		Daily daily11 = new Daily("魔術の秘法",10);
+		daily11.setMissions(Arrays.asList(
+				createMission("秘法の伝承者",0,15,null),
+				createMission("魔物退治 初級",2,25,Arrays.asList(PlatinumChar.秘法の伝承者オデット,TongChar.弓兵アルス,IronChar.一般兵A魔法,ItemChar.魔水晶)),
+				createMission("魔物退治 中級",2,30,Arrays.asList(SliverChar.魔導師ヴァレリー,TongChar.王国重歩兵ラセル,ItemChar.魔水晶2,ItemChar.魔水晶J2)),
+				createMission("魔物退治 上級",3,35,Arrays.asList(PlatinumChar.秘法の伝承者オデット,SliverChar.金色の盾ベルナール,IronChar.一般兵B重装,ItemChar.魔水晶)),
+				createMission("魔物退治 極級",6,60,Arrays.asList(PlatinumChar.秘法の伝承者オデット,SliverChar.魔女カリオペ,TongChar.王国魔術師ロイ,ItemChar.魔水晶))
+				));
+		
+		
+		
+		
+		
 		dailyList = new ArrayList<Daily>();
 		dailyList.addAll(Arrays.asList(
-				daily,daily2,daily3,daily4,daily5,daily6,daily7,daily8
+				daily,daily2,daily3,daily4,daily5,daily6,daily7,daily8,daily10,
+				daily11
+				
 				
 				));
 		
