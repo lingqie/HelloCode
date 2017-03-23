@@ -11,9 +11,11 @@ public class IronChar {
 	final public static Char 足軽= new Char("108", "足軽", CharClass.武士,"iron");
 	final public static Char 下忍= new Char("109", "下忍", CharClass.忍者,"iron");
 	final public static Char 一般兵A弓 = new Char("110", "一般兵A【弓】", CharClass.弓兵,"iron");
+	final public static Char 一般兵A弓J2 = new Char("110", "一般兵A【弓】(判定2回)", CharClass.弓兵,"iron");
 	final public static Char 一般兵B弓 = new Char("111", "一般兵B【弓】", CharClass.弓兵,"iron");
 	final public static Char 密林の射手 = new Char("112", "密林の射手", CharClass.弓兵,"iron");
 	final public static Char 一般兵A魔法 = new Char("113", "一般兵A【魔法】", CharClass.火球,"iron");
+	final public static Char 一般兵A魔法J2 = new Char("113", "一般兵A【魔法】(判定2回)", CharClass.火球,"iron");
 	final public static Char 一般兵B魔法 = new Char("114", "一般兵B【魔法】", CharClass.火球,"iron");
 	final public static Char 海賊手下 = new Char("115", "海賊手下", CharClass.海贼,"iron");
 	final public static Char 鉄の聖霊 = new Char("116", "鉄の聖霊", CharClass.铁圣灵,"iron");
