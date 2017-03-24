@@ -141,15 +141,16 @@ public class AigisCharGsonGenerder {
 				createMission("山賊王統一戦",12,90,Arrays.asList(PlatinumChar.山賊娘ロロネ,SliverChar.暗殺者セシリー,SliverChar.狂戦士フューネス,PlatinumChar.白金の聖霊))
 				));
 		
-//		Daily daily14 = new Daily("山賊王への道",13);
-//		daily14.setMissions(Arrays.asList(
-//				createMission("ロロネ山賊団の野望",1,20,Arrays.asList(PlatinumChar.山賊娘ロロネ)),
-//				createMission("山賊王争奪戦",2,25,Arrays.asList(PlatinumChar.山賊娘ロロネ,SliverChar.山賊頭モーティマ,IronChar.山賊手下AJ2)),
-//				createMission("聖霊と共に",3,30,Arrays.asList(PlatinumChar.山賊娘ロロネ,TongChar.銅の聖霊,PlatinumChar.白金の聖霊,BlackChar.黒の聖霊)),
-//				createMission("山賊流の戦い方",5,40,Arrays.asList(PlatinumChar.山賊娘ロロネ,SliverChar.鋼鉄の女レアン,SliverChar.魔導師ヴァレリー,TongChar.山賊バーガンJ3)),
-//				createMission("姫山賊と姫海賊",7,55,Arrays.asList(PlatinumChar.山賊娘ロロネ,SliverChar.妖精郷の戦士ロザリー,SliverChar.海賊ジョヴァンニ,PlatinumChar.プラチナアーマー)),
-//				createMission("山賊王統一戦",12,90,Arrays.asList(PlatinumChar.山賊娘ロロネ,SliverChar.暗殺者セシリー,SliverChar.狂戦士フューネス,PlatinumChar.白金の聖霊))
-//				));
+		Daily daily14 = new Daily("竜騎士の誓い",13);
+		daily14.setMissions(Arrays.asList(
+				createMission("竜の騎士",1,20,Arrays.asList(PlatinumChar.竜騎士ルシル)),
+				createMission("ファイアブレス",2,25,Arrays.asList(PlatinumChar.竜騎士ルシル,SliverChar.海賊ヴェロッテ,IronChar.一般兵A重装)),
+				createMission("爆弾部隊",3,30,Arrays.asList(PlatinumChar.竜騎士ルシル,SliverChar.堕天使ニエル,SliverChar.魔法剣士リカルド,TongChar.王国兵士ヘクター)),
+				createMission("廃都の大混戦",5,40,Arrays.asList(PlatinumChar.竜騎士ルシル,SliverChar.槍騎兵エレイン,SliverChar.癒し手ドルカ,ItemChar.花束)),
+				createMission("真竜の卵",7,55,Arrays.asList(PlatinumChar.竜騎士ルシル,SliverChar.傭兵クレイブ,SliverChar.金色の盾ベルナール,PlatinumChar.プラチナアーマー)),
+				createMission("手裏剣乱舞",12,90,Arrays.asList(PlatinumChar.竜騎士ルシル,SliverChar.忍者カゲロウ,TongChar.中忍ハヤテJ2,PlatinumChar.白金の聖霊))
+				));
+		
 //		
 		
 		
@@ -158,7 +159,7 @@ public class AigisCharGsonGenerder {
 		dailyList = new ArrayList<Daily>();
 		dailyList.addAll(Arrays.asList(
 				daily,daily2,daily3,daily4,daily5,daily6,daily7,daily8,daily10,
-				daily11,daily12,daily13
+				daily11,daily12,daily13,daily14
 				
 				
 				));
