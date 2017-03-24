@@ -24,8 +24,9 @@ public class TongChar {
 	final public static Char 老魔術師ゼンメル = new Char("215", "老魔術師ゼンメル", CharClass.火球,"tong");
 	final public static Char 魔界魔術師ネヴィン = new Char("216", "魔界魔術師ネヴィン", CharClass.火球,"tong");
 	final public static Char 海賊マウロ = new Char("217", "海賊マウロ", CharClass.海贼,"tong");
+	final public static Char 海賊マウロJ2 = new Char("217", "海賊マウロ（判定2回）", CharClass.海贼,"tong");
 	final public static Char 銅の聖霊 = new Char("218", "銅の聖霊", CharClass.铜圣灵,"tong");
-	
-	
+
+
 
 }

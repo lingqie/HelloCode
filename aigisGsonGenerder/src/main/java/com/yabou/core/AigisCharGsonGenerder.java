@@ -9,10 +9,10 @@ import com.google.gson.Gson;
 public class AigisCharGsonGenerder {
 	private static ArrayList<Daily> dailyList;
 	private static int daliysize=2;
-	
+
 	public static void main(String[] args) {
 		Gson gson = new Gson();
-				
+
 		Daily daily = new Daily("魔女を救え！",0);
 		Mission mission = createMission("魔女の逆襲",2,20,Arrays.asList(SliverChar.魔女カリオペ,SliverChar.弓兵ダニエラ,SliverChar.傭兵クレイブ));
 		Mission mission2 = createMission("魔女の逆襲",2,25,Arrays.asList(SliverChar.魔女カリオペ,SliverChar.魔導師ヴァレリー,GoldChar.白き魔女クロリス));
@@ -20,7 +20,7 @@ public class AigisCharGsonGenerder {
 		Mission mission4 = createMission("魔女の宴",3,35,Arrays.asList(GoldChar.白き魔女クロリス,SliverChar.鋼鉄の女レアン,SliverChar.魔女カリオペ));
 		Mission mission5 = createMission("魔女の狂騒",5,45,Arrays.asList(GoldChar.白き魔女クロリス,SliverChar.癒し手アリサ,SliverChar.狂戦士フューネス));
 		daily.setMissions(Arrays.asList(mission,mission2,mission3,mission4,mission5));
-		
+
 		Daily daily2 = new Daily("魔女の娘",1);
 		Mission mission6 = createMission("魔女の復活",2,20,Arrays.asList(SliverChar.魔導師ヴァレリー,TongChar.王国魔術師ロイ,IronChar.山賊手下A,IronChar.鉄の聖霊));
 		Mission mission7 = createMission("魔女の夜",2,20,Arrays.asList(SliverChar.狂戦士フューネス,TongChar.王国重歩兵ラセル,IronChar.一般兵A弓,TongChar.銅の聖霊));
@@ -29,7 +29,7 @@ public class AigisCharGsonGenerder {
 		Mission mission10 = createMission("魔女の追撃",3,35,Arrays.asList(SliverChar.癒し手ドルカ,SliverChar.鋼鉄の女レアン,TongChar.山賊バーガン,PlatinumChar.白金の聖霊));
 		Mission mission11 = createMission("魔女の宴II",5,50,Arrays.asList(PlatinumChar.白き魔女ベリンダ,SliverChar.弓兵ソーマ,TongChar.弓兵ウィルフレッド,BlackChar.黒の聖霊));
 		daily2.setMissions(Arrays.asList(mission6,mission7,mission8,mission9,mission10,mission11));
-		
+
 		Daily daily3 = new Daily("闇の忍者軍団",2);
 		daily3.setMissions(Arrays.asList(
 		createMission("闇の忍者",1,20,Arrays.asList(PlatinumChar.忍者アザミ,IronChar.足軽,IronChar.下忍)),
@@ -39,7 +39,7 @@ public class AigisCharGsonGenerder {
 		createMission("忍びの本義 極級",7,70,Arrays.asList(PlatinumChar.忍者アザミ,SliverChar.槍騎兵エレイン,SliverChar.狂戦士フューネス,PlatinumChar.プラチナアーマー)),
 		createMission("触手の舞　神級",2,100,Arrays.asList(ItemChar.魔水晶,ItemChar.魔水晶2,ItemChar.魔水晶3))
 		));
-		
+
 		Daily daily4 = new Daily("鬼を宿す剣士",3);
 		daily4.setMissions(Arrays.asList(
 		createMission("鬼の力",1,20,Arrays.asList(PlatinumChar.剣豪モミジ,IronChar.一般兵A重装,IronChar.鉄の聖霊)),
@@ -49,7 +49,7 @@ public class AigisCharGsonGenerder {
 		createMission("力の解放 極級",7,70,Arrays.asList(PlatinumChar.剣豪モミジ,SliverChar.鋼鉄の女レアン,SliverChar.足軽頭サノスケ,PlatinumChar.白金の聖霊)),
 		createMission("悪鬼襲来 神級",2,100,Arrays.asList(GoldChar.金の聖霊,PlatinumChar.白金の聖霊,BlackChar.黒の聖霊))
 		));
-		
+
 		Daily daily5 = new Daily("聖戦士の挑戦",4);
 		daily5.setMissions(Arrays.asList(
 		createMission("始まりの戦い",1,20,Arrays.asList(SliverChar.傭兵クレイブ,TongChar.山賊バーガン,IronChar.山賊手下B,ItemChar.花束)),
@@ -58,7 +58,7 @@ public class AigisCharGsonGenerder {
 		createMission("鎧の戦列",3,35,Arrays.asList(PlatinumChar.聖戦士マリーベル,SliverChar.魔女カリオペ,IronChar.一般兵B,ItemChar.花束)),
 		createMission("鎧の戦列２",6,60,Arrays.asList(PlatinumChar.聖戦士マリーベル,SliverChar.鋼鉄の女レアン,TongChar.王国重歩兵ラセル,ItemChar.ルビー))
 		));
-		
+
 		Daily daily6 = new Daily("影の狙撃手",5);
 		daily6.setMissions(Arrays.asList(
 		createMission("凶手の矢",1,20,Arrays.asList(PlatinumChar.漆黒の射手リタ,IronChar.一般兵A弓J2)),
@@ -68,7 +68,7 @@ public class AigisCharGsonGenerder {
 		createMission("覚悟の決戦",7,55,Arrays.asList(PlatinumChar.漆黒の射手リタ,SliverChar.忍者カゲロウ,SliverChar.盗賊バラッド,PlatinumChar.白金の聖霊)),
 		createMission("魔窟からの使者",2,100,Arrays.asList(GoldChar.金の聖霊,PlatinumChar.白金の聖霊,BlackChar.黒の聖霊))
 		));
-		
+
 		Daily daily7 = new Daily("魔人の宿命",6);
 		daily7.setMissions(Arrays.asList(
 		createMission("魔人の少女",1,20,Arrays.asList(PlatinumChar.混血の狩人フラン,IronChar.一般兵A魔法J2)),
@@ -78,7 +78,7 @@ public class AigisCharGsonGenerder {
 		createMission("吸血の宴　極級",7,55,Arrays.asList(PlatinumChar.混血の狩人フラン,SliverChar.弓兵ダニエラ,SliverChar.魔女カリオペ,PlatinumChar.白金の聖霊)),
 		createMission("感染　神級",2,100,Arrays.asList(GoldChar.金の聖霊,PlatinumChar.白金の聖霊,BlackChar.黒の聖霊))
 		));
-		
+
 		Daily daily8 = new Daily("戦乙女の契約",7);
 		daily8.setMissions(Arrays.asList(
 		createMission("戦乙女の挑戦",1,20,Arrays.asList(PlatinumChar.戦乙女エミリア,IronChar.山賊手下B,IronChar.一般兵A魔法)),
@@ -88,11 +88,11 @@ public class AigisCharGsonGenerder {
 		createMission("最後の戦い",7,55,Arrays.asList(PlatinumChar.戦乙女エミリア,SliverChar.盗賊バラッド,SliverChar.癒し手ドルカ,ItemChar.魔水晶J2)),
 		createMission("騎兵の侵攻",2,100,Arrays.asList(GoldChar.金の聖霊,PlatinumChar.白金の聖霊,BlackChar.黒の聖霊))
 		));
-		
-		
-		
-		
-		
+
+
+
+
+
 		Daily daily9 = new Daily("暗黒騎士団の脅威",8);
 		daily9.setMissions(Arrays.asList(
 				createMission("宣戦布告",1,20,Arrays.asList(ItemChar.花束,ItemChar.魔水晶)),
@@ -101,7 +101,7 @@ public class AigisCharGsonGenerder {
 				createMission("暗黒の波動",3,35,Arrays.asList(PlatinumChar.暗黒騎士ユリナ,SliverChar.魔女カリオペ,ItemChar.花束,ItemChar.魔水晶)),
 				createMission("決戦 極級",6,60,Arrays.asList(PlatinumChar.暗黒騎士ユリナ,SliverChar.槍騎兵エレイン,ItemChar.花束,ItemChar.魔水晶))
 				));
-		
+
 		Daily daily10 = new Daily("暗黒舞踏会",9);
 		daily10.setMissions(Arrays.asList(
 				createMission("囚われた踊り子",1,20,Arrays.asList(PlatinumChar.情熱の踊り子ワルツ,IronChar.一般兵A,IronChar.一般兵A重装)),
@@ -111,7 +111,7 @@ public class AigisCharGsonGenerder {
 				createMission("2つの旋律　極級",7,55,Arrays.asList(PlatinumChar.情熱の踊り子ワルツ,SliverChar.海賊ヴェロッテ,SliverChar.吸血鬼狩人フーリ,PlatinumChar.白金の聖霊)),
 				createMission("闇の舞踏会　神級",2,100,Arrays.asList(GoldChar.金の聖霊,PlatinumChar.白金の聖霊,BlackChar.黒の聖霊))
 				));
-		
+
 		Daily daily11 = new Daily("魔術の秘法",10);
 		daily11.setMissions(Arrays.asList(
 				createMission("秘法の伝承者",0,15,null),
@@ -120,7 +120,7 @@ public class AigisCharGsonGenerder {
 				createMission("魔物退治 上級",3,35,Arrays.asList(PlatinumChar.秘法の伝承者オデット,SliverChar.金色の盾ベルナール,IronChar.一般兵B重装,ItemChar.魔水晶)),
 				createMission("魔物退治 極級",6,60,Arrays.asList(PlatinumChar.秘法の伝承者オデット,SliverChar.魔女カリオペ,TongChar.王国魔術師ロイ,ItemChar.魔水晶))
 				));
-		
+
 		Daily daily12 = new Daily("アンナと雪の美女",11);
 		daily12.setMissions(Arrays.asList(
 				createMission("冠雪の大地",1,20,Arrays.asList(SliverChar.忍者カゲロウ,IronChar.足軽,IronChar.一般兵B重装)),
@@ -130,7 +130,7 @@ public class AigisCharGsonGenerder {
 				createMission("太古の魔物",7,55,Arrays.asList(PlatinumChar.凍氷の守り手エリザ,SliverChar.魔導師ヴァレリー,SliverChar.槍騎兵エレイン,ItemChar.魔水晶J2)),
 				createMission("凶魔の大侵攻",2,100,Arrays.asList(GoldChar.金の聖霊,PlatinumChar.白金の聖霊,BlackChar.黒の聖霊))
 				));
-		
+
 		Daily daily13 = new Daily("山賊王への道",12);
 		daily13.setMissions(Arrays.asList(
 				createMission("ロロネ山賊団の野望",1,20,Arrays.asList(PlatinumChar.山賊娘ロロネ)),
@@ -140,7 +140,7 @@ public class AigisCharGsonGenerder {
 				createMission("姫山賊と姫海賊",7,55,Arrays.asList(PlatinumChar.山賊娘ロロネ,SliverChar.妖精郷の戦士ロザリー,SliverChar.海賊ジョヴァンニ,PlatinumChar.プラチナアーマー)),
 				createMission("山賊王統一戦",12,90,Arrays.asList(PlatinumChar.山賊娘ロロネ,SliverChar.暗殺者セシリー,SliverChar.狂戦士フューネス,PlatinumChar.白金の聖霊))
 				));
-		
+
 		Daily daily14 = new Daily("竜騎士の誓い",13);
 		daily14.setMissions(Arrays.asList(
 				createMission("竜の騎士",1,20,Arrays.asList(PlatinumChar.竜騎士ルシル)),
@@ -150,20 +150,29 @@ public class AigisCharGsonGenerder {
 				createMission("真竜の卵",7,55,Arrays.asList(PlatinumChar.竜騎士ルシル,SliverChar.傭兵クレイブ,SliverChar.金色の盾ベルナール,PlatinumChar.プラチナアーマー)),
 				createMission("手裏剣乱舞",12,90,Arrays.asList(PlatinumChar.竜騎士ルシル,SliverChar.忍者カゲロウ,TongChar.中忍ハヤテJ2,PlatinumChar.白金の聖霊))
 				));
-		
-//		
-		
-		
-		
-		
+
+		Daily daily15 = new Daily("錬金術士と賢者の石",14);
+		daily15.setMissions(Arrays.asList(
+				createMission("賢者の石",1,20,Arrays.asList (PlatinumChar.白衣の錬金術士コリン)),
+				createMission("魔の研究者",2,25,Arrays.asList (PlatinumChar.白衣の錬金術士コリン,SliverChar.暗殺者セシリー,IronChar.一般兵A弓J2)),
+				createMission("地中でうごめく 影",3,30,Arrays.asList(PlatinumChar.白衣の錬金術士コリン,SliverChar.妖精郷の戦士ロザリー,SliverChar.弓兵ソーマ,TongChar.海賊マウロJ2)),
+				createMission("心を支配する 力",5,40,Arrays.asList(PlatinumChar.白衣の錬金術士コリン,SliverChar.魔導師ヴァレリー,SliverChar.砲兵パーシス,ItemChar.魔水晶J2)),
+				createMission("真理の代償",7,55,Arrays.asList (PlatinumChar.白衣の錬金術士コリン,SliverChar.鋼鉄の女レアン,SliverChar.足軽頭サノスケ,PlatinumChar.プラチナアーマー)),
+				createMission("魔界の軍勢",12,90,Arrays.asList (PlatinumChar.白衣の錬金術士コリン,SliverChar.見習い騎兵ミーシャ,SliverChar.癒し手アリサ,ItemChar.虹の聖霊))
+				));
+
+
+
+
+
 		dailyList = new ArrayList<Daily>();
 		dailyList.addAll(Arrays.asList(
 				daily,daily2,daily3,daily4,daily5,daily6,daily7,daily8,daily10,
 				daily11,daily12,daily13,daily14
-				
-				
+
+
 				));
-		
+
 		List<String> charClassList=new ArrayList<String>();
 		CharClass[] values = CharClass.values();
 		for (CharClass charClass : values) {

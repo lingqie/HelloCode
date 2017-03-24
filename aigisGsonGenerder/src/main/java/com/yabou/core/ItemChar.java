@@ -8,7 +8,7 @@ public class ItemChar {
 	final public static Char 魔水晶3 = new Char("003", "魔水晶*3", CharClass.魔水晶,"item");
 	final public static Char 花束 = new Char("004", "花束", CharClass.好感物,"item");
 	final public static Char ルビー = new Char("005", "ルビー", CharClass.好感物,"item");
-	
-	
+
+	final public static Char 虹の聖霊 = new Char("900", "虹の聖霊", CharClass.虹圣灵,"item");
 
 }

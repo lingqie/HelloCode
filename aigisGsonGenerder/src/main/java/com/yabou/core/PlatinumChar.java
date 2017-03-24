@@ -14,7 +14,9 @@ public class PlatinumChar {
 	final public static Char 凍氷の守り手エリザ = new Char("5128", "凍氷の守り手エリザ", CharClass.冰,"white");
 	final public static Char 混血の狩人フラン = new Char("5132", "混血の狩人フラン", CharClass.弩,"white");
 	final public static Char 情熱の踊り子ワルツ = new Char("5145", "情熱の踊り子ワルツ", CharClass.舞娘,"white");
+	final public static Char 白衣の錬金術士コリン = new Char("5150", "白衣の錬金術士コリン", CharClass.炼金,"white");
 	final public static Char 白金の聖霊 = new Char("5161", "白金の聖霊", CharClass.白圣灵,"white");
 	final public static Char プラチナアーマー = new Char("5163", "プラチナアーマー", CharClass.白桶,"white");
+
 
 }
