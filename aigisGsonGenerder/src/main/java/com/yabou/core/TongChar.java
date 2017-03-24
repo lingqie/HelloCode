@@ -11,6 +11,7 @@ public class TongChar {
 	final public static Char 王国重歩兵ラセル = new Char("206", "王国重歩兵ラセル", CharClass.盾,"tong");
 	final public static Char 王国重歩兵ラセルJ2 = new Char("206", "王国重歩兵ラセル（判定2回）", CharClass.盾,"tong");
 	final public static Char 山賊バーガン = new Char("207", "山賊バーガン", CharClass.山贼,"tong");
+	final public static Char 山賊バーガンJ3 = new Char("207", "山賊バーガン（判定3回）", CharClass.山贼,"tong");
 	final public static Char 竜人戦士 = new Char("208", "竜人戦士", CharClass.龙兵,"tong");
 	final public static Char 熟練足軽ヨジロウ = new Char("209", "熟練足軽ヨジロウ", CharClass.武士,"tong");
 	final public static Char 中忍ハヤテ = new Char("210", "中忍ハヤテ", CharClass.忍者,"tong");

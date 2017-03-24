@@ -7,6 +7,7 @@ public class IronChar {
 	final public static Char 一般兵A重装= new Char("104", "一般兵A【重装】", CharClass.盾,"iron");
 	final public static Char 一般兵B重装= new Char("105", "一般兵B【重装】", CharClass.盾,"iron");
 	final public static Char 山賊手下A= new Char("106", "山賊 手下A", CharClass.山贼,"iron");
+	final public static Char 山賊手下AJ2= new Char("106", "山賊 手下A(判定2回)", CharClass.山贼,"iron");
 	final public static Char 山賊手下B= new Char("107", "山賊 手下B", CharClass.山贼,"iron");
 	final public static Char 足軽= new Char("108", "足軽", CharClass.武士,"iron");
 	final public static Char 下忍= new Char("109", "下忍", CharClass.忍者,"iron");

@@ -121,6 +121,36 @@ public class AigisCharGsonGenerder {
 				createMission("魔物退治 極級",6,60,Arrays.asList(PlatinumChar.秘法の伝承者オデット,SliverChar.魔女カリオペ,TongChar.王国魔術師ロイ,ItemChar.魔水晶))
 				));
 		
+		Daily daily12 = new Daily("アンナと雪の美女",11);
+		daily12.setMissions(Arrays.asList(
+				createMission("冠雪の大地",1,20,Arrays.asList(SliverChar.忍者カゲロウ,IronChar.足軽,IronChar.一般兵B重装)),
+				createMission("白雪の凶手",2,25,Arrays.asList(SliverChar.魔女カリオペ,TongChar.妖精郷の戦士アトラ,ItemChar.魔水晶)),
+				createMission("雪嶺の魔女",3,30,Arrays.asList(PlatinumChar.凍氷の守り手エリザ,SliverChar.ドワーフ戦士グスタフ,TongChar.中忍ハヤテJ2)),
+				createMission("破られた封印",5,40,Arrays.asList(SliverChar.妖精郷の射手ローレン,SliverChar.癒し手ドルカ,PlatinumChar.白金の聖霊,ItemChar.魔水晶)),
+				createMission("太古の魔物",7,55,Arrays.asList(PlatinumChar.凍氷の守り手エリザ,SliverChar.魔導師ヴァレリー,SliverChar.槍騎兵エレイン,ItemChar.魔水晶J2)),
+				createMission("凶魔の大侵攻",2,100,Arrays.asList(GoldChar.金の聖霊,PlatinumChar.白金の聖霊,BlackChar.黒の聖霊))
+				));
+		
+		Daily daily13 = new Daily("山賊王への道",12);
+		daily13.setMissions(Arrays.asList(
+				createMission("ロロネ山賊団の野望",1,20,Arrays.asList(PlatinumChar.山賊娘ロロネ)),
+				createMission("山賊王争奪戦",2,25,Arrays.asList(PlatinumChar.山賊娘ロロネ,SliverChar.山賊頭モーティマ,IronChar.山賊手下AJ2)),
+				createMission("聖霊と共に",3,30,Arrays.asList(PlatinumChar.山賊娘ロロネ,TongChar.銅の聖霊,PlatinumChar.白金の聖霊,BlackChar.黒の聖霊)),
+				createMission("山賊流の戦い方",5,40,Arrays.asList(PlatinumChar.山賊娘ロロネ,SliverChar.鋼鉄の女レアン,SliverChar.魔導師ヴァレリー,TongChar.山賊バーガンJ3)),
+				createMission("姫山賊と姫海賊",7,55,Arrays.asList(PlatinumChar.山賊娘ロロネ,SliverChar.妖精郷の戦士ロザリー,SliverChar.海賊ジョヴァンニ,PlatinumChar.プラチナアーマー)),
+				createMission("山賊王統一戦",12,90,Arrays.asList(PlatinumChar.山賊娘ロロネ,SliverChar.暗殺者セシリー,SliverChar.狂戦士フューネス,PlatinumChar.白金の聖霊))
+				));
+		
+//		Daily daily14 = new Daily("山賊王への道",13);
+//		daily14.setMissions(Arrays.asList(
+//				createMission("ロロネ山賊団の野望",1,20,Arrays.asList(PlatinumChar.山賊娘ロロネ)),
+//				createMission("山賊王争奪戦",2,25,Arrays.asList(PlatinumChar.山賊娘ロロネ,SliverChar.山賊頭モーティマ,IronChar.山賊手下AJ2)),
+//				createMission("聖霊と共に",3,30,Arrays.asList(PlatinumChar.山賊娘ロロネ,TongChar.銅の聖霊,PlatinumChar.白金の聖霊,BlackChar.黒の聖霊)),
+//				createMission("山賊流の戦い方",5,40,Arrays.asList(PlatinumChar.山賊娘ロロネ,SliverChar.鋼鉄の女レアン,SliverChar.魔導師ヴァレリー,TongChar.山賊バーガンJ3)),
+//				createMission("姫山賊と姫海賊",7,55,Arrays.asList(PlatinumChar.山賊娘ロロネ,SliverChar.妖精郷の戦士ロザリー,SliverChar.海賊ジョヴァンニ,PlatinumChar.プラチナアーマー)),
+//				createMission("山賊王統一戦",12,90,Arrays.asList(PlatinumChar.山賊娘ロロネ,SliverChar.暗殺者セシリー,SliverChar.狂戦士フューネス,PlatinumChar.白金の聖霊))
+//				));
+//		
 		
 		
 		
@@ -128,7 +158,7 @@ public class AigisCharGsonGenerder {
 		dailyList = new ArrayList<Daily>();
 		dailyList.addAll(Arrays.asList(
 				daily,daily2,daily3,daily4,daily5,daily6,daily7,daily8,daily10,
-				daily11
+				daily11,daily12,daily13
 				
 				
 				));
