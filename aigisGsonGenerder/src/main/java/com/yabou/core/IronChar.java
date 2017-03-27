@@ -5,6 +5,7 @@ public class IronChar {
 	final public static Char 一般兵B = new Char("102", "一般兵B", CharClass.士兵,"iron");
 	final public static Char 砂漠兵士 = new Char("103", "砂漠兵士", CharClass.士兵,"iron");
 	final public static Char 一般兵A重装= new Char("104", "一般兵A【重装】", CharClass.盾,"iron");
+	final public static Char 一般兵A重装J2= new Char("104", "一般兵A【重装】(判定2回)", CharClass.盾,"iron");
 	final public static Char 一般兵B重装= new Char("105", "一般兵B【重装】", CharClass.盾,"iron");
 	final public static Char 山賊手下A= new Char("106", "山賊 手下A", CharClass.山贼,"iron");
 	final public static Char 山賊手下AJ2= new Char("106", "山賊 手下A(判定2回)", CharClass.山贼,"iron");
@@ -20,6 +21,6 @@ public class IronChar {
 	final public static Char 一般兵B魔法 = new Char("114", "一般兵B【魔法】", CharClass.火球,"iron");
 	final public static Char 海賊手下 = new Char("115", "海賊手下", CharClass.海贼,"iron");
 	final public static Char 鉄の聖霊 = new Char("116", "鉄の聖霊", CharClass.铁圣灵,"iron");
-	
+
 
 }

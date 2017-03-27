@@ -161,6 +161,27 @@ public class AigisCharGsonGenerder {
 				createMission("魔界の軍勢",12,90,Arrays.asList (PlatinumChar.白衣の錬金術士コリン,SliverChar.見習い騎兵ミーシャ,SliverChar.癒し手アリサ,ItemChar.虹の聖霊))
 				));
 
+		Daily daily16 = new Daily("モンクの修行場",15);
+		daily16.setMissions(Arrays.asList(
+		createMission("モンクの修行場：白帯",1,20,Arrays.asList(PlatinumChar.武闘家リン,ItemChar.魔水晶,ItemChar.花束)),
+		createMission("モンクの修行場：初段",2,25,Arrays.asList(PlatinumChar.武闘家リン,SliverChar.暗殺者セシリー,ItemChar.魔水晶)),
+		createMission("モンクの修行場：十段",3,30,Arrays.asList(PlatinumChar.武闘家リン,SliverChar.鋼鉄の女レアン,ItemChar.花束)),
+		createMission("モンクの修行場：師範代",5,35,Arrays.asList(PlatinumChar.武闘家リン,SliverChar.妖精郷の戦士ロザリー,SliverChar.傭兵クレイブ,ItemChar.水晶)),
+		createMission("モンクの修行場：奥義覚醒",7,60,Arrays.asList(PlatinumChar.武闘家リン,SliverChar.妖精郷の戦士ロザリー,SliverChar.山賊頭モーティマ,ItemChar.魔水晶2))
+
+		));
+
+		Daily daily17 = new Daily("聖鎚闘士の挑戦",16);
+		daily17.setMissions(Arrays.asList(
+		createMission("誇り高き聖鎚闘士",1,20,Arrays.asList(PlatinumChar.聖鎚闘士ミランダ)),
+		createMission("迅速なる赤鎧",2,25,Arrays.asList(PlatinumChar.聖鎚闘士ミランダ,SliverChar.弓兵ソーマ,IronChar.一般兵A重装J2)),
+		createMission("哀しみの亡霊",3,30,Arrays.asList(PlatinumChar.聖鎚闘士ミランダ,SliverChar.暗殺者セシリー,SliverChar.金色の盾ベルナール,TongChar.王国重歩兵ラセルJ2)),
+		createMission("鉄壁の陣形",5,40,Arrays.asList(PlatinumChar.聖鎚闘士ミランダ,SliverChar.海賊ヴェロッテ,SliverChar.ドワーフ戦士グスタフ,ItemChar.魔水晶J2)),
+		createMission("魔法と鎧",7,55,Arrays.asList(PlatinumChar.聖鎚闘士ミランダ,SliverChar.砲兵パーシス,SliverChar.癒し手アリサ,PlatinumChar.プラチナアーマー)),
+		createMission("鎧の軍勢",12,90,Arrays.asList(PlatinumChar.聖鎚闘士ミランダ,SliverChar.魔女カリオペ,SliverChar.見習い騎兵ミーシャ,PlatinumChar.白金の聖霊J2))
+		));
+
+
 
 
 
@@ -168,7 +189,7 @@ public class AigisCharGsonGenerder {
 		dailyList = new ArrayList<Daily>();
 		dailyList.addAll(Arrays.asList(
 				daily,daily2,daily3,daily4,daily5,daily6,daily7,daily8,daily10,
-				daily11,daily12,daily13,daily14
+				daily11,daily12,daily13,daily14,daily15,daily16,daily17
 
 
 				));
