@@ -8,7 +8,6 @@ import com.google.gson.Gson;
 
 public class AigisCharGsonGenerder {
 	private static ArrayList<Daily> dailyList;
-	private static int daliysize=2;
 
 	public static void main(String[] args) {
 		Gson gson = new Gson();
@@ -180,7 +179,9 @@ public class AigisCharGsonGenerder {
 		createMission("魔法と鎧",7,55,Arrays.asList(PlatinumChar.聖鎚闘士ミランダ,SliverChar.砲兵パーシス,SliverChar.癒し手アリサ,PlatinumChar.プラチナアーマー)),
 		createMission("鎧の軍勢",12,90,Arrays.asList(PlatinumChar.聖鎚闘士ミランダ,SliverChar.魔女カリオペ,SliverChar.見習い騎兵ミーシャ,PlatinumChar.白金の聖霊J2))
 		));
-
+		
+		
+		
 
 
 
@@ -199,12 +200,41 @@ public class AigisCharGsonGenerder {
 		for (CharClass charClass : values) {
 			charClassList.add(charClass.name());
 		}
-		System.out.println(gson.toJson(dailyList));
-//		System.out.println(gson.toJson(charClassList));
+		
+		List<String> ccliwai=Arrays.asList("舞娘","暗黑骑士","龙骑");
+		List<String> liwai=Arrays.asList("铁圣灵","铜圣灵","魔水晶","银圣灵","金圣灵","白圣灵","黑圣灵","虹圣灵","金桶","白桶");
+		
+		List<charMissionSummary> summaries = new ArrayList<charMissionSummary>();
+		for (String charName : charClassList) {
+			if (!ccliwai.contains(charName)) {
+				charMissionSummary cms = new charMissionSummary();
+				cms.setCharName(charName);
+				for (Daily d : dailyList) {
+					
+					for (Mission m : d.getMissions()) {
+						if (m.getDropItems() != null) {
+							for (Char item : m.getDropItems()) {
+								if ((item.getCclass().equals(CharClass.valueOf(charName))&&item.getRank().equals("sliver"))||
+										((item.getCclass().equals(CharClass.valueOf(charName)))&&(liwai.contains(charName)))) {
+									List<Mission> m1 = cms.getMissions();
+									m1.add(m);
+									cms.setMissions(m1);
+								}
+							}
+						}
+					}
+				}
+				summaries.add(cms);
+			}
+		}
+
+//		System.out.println(gson.toJson(summaries));
+	 System.out.println(gson.toJson(dailyList));
+//	 System.out.println(gson.toJson(charClassList));
 	}
 
-	private static Mission createMission(String name,int tili,int meili,List<Char> items) {
-		Mission mission = new Mission(name,tili,meili);
+	private static Mission createMission(String name, int tili, int meili, List<Char> items) {
+		Mission mission = new Mission(name, tili, meili);
 		mission.setDropItems(items);
 		return mission;
 	}

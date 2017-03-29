@@ -10,14 +10,14 @@ public class Char {
 		this.id=id;
 		this.name=name;
 		this.cclass=c;
-		this.rank="sliver";
+		this.setRank("sliver");
 	}
 	
 	public Char(String id,String name,CharClass c,String rank) {
 		this.id=id;
 		this.name=name;
 		this.cclass=c;
-		this.rank=rank;
+		this.setRank(rank);
 	}
 	
 	public String getId() {
@@ -39,6 +39,14 @@ public class Char {
 
 	public void setCclass(CharClass cclass) {
 		this.cclass = cclass;
+	}
+
+	public String getRank() {
+		return rank;
+	}
+
+	public void setRank(String rank) {
+		this.rank = rank;
 	}
 
 	

@@ -7,6 +7,8 @@ public class Mission {
 	private int meiLi;
 	private String missionJPName;
 	private List<Char> dropItems;
+	private int dailyNo;
+	private String dailyJPName;
 	
 	public Mission(String JpName,int tiLi,int meiLi) {
 		this.missionJPName=JpName;
@@ -38,6 +40,22 @@ public class Mission {
 	}
 	public void setDropItems(List<Char> dropItems) {
 		this.dropItems = dropItems;
+	}
+
+	public int getDailyNo() {
+		return dailyNo;
+	}
+
+	public void setDailyNo(int dailyNo) {
+		this.dailyNo = dailyNo;
+	}
+
+	public String getDailyJPName() {
+		return dailyJPName;
+	}
+
+	public void setDailyJPName(String dailyJPName) {
+		this.dailyJPName = dailyJPName;
 	}	
 	
 }
