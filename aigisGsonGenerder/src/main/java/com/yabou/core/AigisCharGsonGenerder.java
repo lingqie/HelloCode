@@ -191,8 +191,7 @@ public class AigisCharGsonGenerder {
 		dailyList.addAll(Arrays.asList(
 				daily,daily2,daily3,daily4,daily5,daily6,daily7,daily8,daily10,
 				daily11,daily12,daily13,daily14,daily15,daily16,daily17
-
-
+//				,daily18,daily19,daily20,
 				));
 
 		List<String> charClassList=new ArrayList<String>();
@@ -201,7 +200,7 @@ public class AigisCharGsonGenerder {
 			charClassList.add(charClass.name());
 		}
 		
-		List<String> ccliwai=Arrays.asList("舞娘","暗黑骑士","龙骑");
+		List<String> ccliwai=Arrays.asList("舞娘","暗黑骑士","龙骑","好感物","巫女","水兵","天马","咒术","游侠");
 		List<String> liwai=Arrays.asList("铁圣灵","铜圣灵","魔水晶","银圣灵","金圣灵","白圣灵","黑圣灵","虹圣灵","金桶","白桶");
 		
 		List<charMissionSummary> summaries = new ArrayList<charMissionSummary>();
