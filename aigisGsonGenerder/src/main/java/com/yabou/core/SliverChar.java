@@ -59,4 +59,5 @@ public class SliverChar {
 //	final public static Char 帝国遊撃兵エリック= new Char("356", "帝国遊撃兵エリック", CharClass.弓兵);
 //	final public static Char 帝国付与魔術師ヒース= new Char("357", "帝国付与魔術師ヒース", CharClass.炼金);
 	final public static Char 銀の聖霊= new Char("358", "銀の聖霊", CharClass.银圣灵);
+	final public static Char 銀の聖霊J2= new Char("358", "銀の聖霊（判定2回）", CharClass.银圣灵);
 }

@@ -8,6 +8,7 @@ public class Daily {
 	private int no;
 	private String dailyJPName;
 	private List<Mission> missions;
+	private int size;
 	
 	public Daily(String JpName,int no) {
 		this.dailyJPName=JpName;
@@ -28,13 +29,19 @@ public class Daily {
 			mission.setDailyJPName(this.dailyJPName);
 		}
 		this.missions = missions;
-		
+		this.setSize(missions.size());
 	}
 	public String getDailyJPName() {
 		return dailyJPName;
 	}
 	public void setDailyJPName(String dailyJPName) {
 		this.dailyJPName = dailyJPName;
+	}
+	public int getSize() {
+		return size;
+	}
+	public void setSize(int size) {
+		this.size = size;
 	}
 	
 }
