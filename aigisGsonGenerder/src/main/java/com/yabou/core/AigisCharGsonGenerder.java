@@ -258,13 +258,164 @@ public class AigisCharGsonGenerder {
 				createMission("偽りの英雄",7,55,Arrays.asList(PlatinumChar.帝国兵長リーゼロッテ,SliverChar.神官クリストファー,SliverChar.魔術師パレス,PlatinumChar.プラチナアーマー)),
 				createMission("偽りの王子軍",12,90,Arrays.asList(PlatinumChar.帝国兵長リーゼロッテ,SliverChar.青竜のガドラス,SliverChar.山賊頭モーティマ,ItemChar.ルビーJ2))
 				));
+		
+		Daily daily26 = new Daily("堕天使の封印",25);
+		daily26.setMissions(Arrays.asList(
+			createMission("黒翼の少女",1,20,Arrays.asList(PlatinumChar.堕天使クロエ,ItemChar.魔水晶,ItemChar.花束)),
+			createMission("魔界の門",2,30,Arrays.asList(PlatinumChar.堕天使クロエ,SliverChar.魔女カリオペ,ItemChar.花束,ItemChar.魔水晶)),
+			createMission("無邪気な殺意",3,40,Arrays.asList(PlatinumChar.堕天使クロエ,SliverChar.海賊ジョヴァンニ,ItemChar.樽ビール,ItemChar.一般ワイン)),
+			createMission("邪悪な微笑",5,50,Arrays.asList(PlatinumChar.堕天使クロエ,SliverChar.女盗賊ハリッサ,SliverChar.弓兵ダニエラ,PlatinumChar.プラチナアーマー)),
+			createMission("凶魔出現",7,70,Arrays.asList(PlatinumChar.堕天使クロエ,SliverChar.神官クリストファー,SliverChar.足軽頭サノスケ,PlatinumChar.プラチナアーマー)),
+	        createMission("四面楚歌",2,100,Arrays.asList(ItemChar.魔水晶,ItemChar.魔水晶2,ItemChar.魔水晶3))
+		));
+
+		Daily daily27 = new Daily("暗黒騎士団と聖夜の贈り物",26);
+		daily27.setMissions(Arrays.asList(
+			createMission("聖夜の弓騎兵",1,20,Arrays.asList(PlatinumChar.聖夜の弓騎兵サラサ,TongChar.銅の聖霊,ItemChar.花束)),
+			createMission("暗黒騎士との約束",2,25,Arrays.asList(PlatinumChar.聖夜の弓騎兵サラサ,SliverChar.魔女メローネ,SliverChar.銀の聖霊)),
+			createMission("二つの戦線",3,30,Arrays.asList(PlatinumChar.聖夜の弓騎兵サラサ,SliverChar.傭兵クレイブ,BlackChar.黒の聖霊,ItemChar.魔水晶)),
+			createMission("暗黒の弓騎兵",5,40,Arrays.asList(PlatinumChar.聖夜の弓騎兵サラサ,SliverChar.鋼鉄の女レアン,SliverChar.槍騎兵エレイン,ItemChar.花束J2)),
+			createMission("雪山の共同戦線",7,55,Arrays.asList(PlatinumChar.聖夜の弓騎兵サラサ,SliverChar.司祭シャロン,SliverChar.魔術師パレス,PlatinumChar.白金の聖霊)),
+            createMission("トロルの恐怖",12,90,Arrays.asList(PlatinumChar.聖夜の弓騎兵サラサ,SliverChar.神官クリストファー,PlatinumChar.プラチナアーマー,ItemChar.ルビーJ2))
+		));
+		
+		Daily daily28 = new Daily("古代の機甲兵", 27);
+		daily28.setMissions(Arrays.asList(
+				createMission("古代の遺産", 1, 20, Arrays.asList(PlatinumChar.機甲士リッカ, ItemChar.魔水晶, ItemChar.花束)),
+				createMission("洞窟の主", 2, 30, Arrays.asList(PlatinumChar.機甲士リッカ, SliverChar.足軽頭サノスケ, TongChar.銅の聖霊,ItemChar.樽ビール)),
+				createMission("三つ巴の戦い", 3, 40,
+						Arrays.asList(PlatinumChar.機甲士リッカ, SliverChar.弓兵ソーマ, ItemChar.魔水晶J2, ItemChar.魔水晶2)),
+				createMission("機甲兵団", 5, 50,
+						Arrays.asList(PlatinumChar.機甲士リッカ, SliverChar.猫魔女ネーニャ, PlatinumChar.白金の聖霊, PlatinumChar.プラチナアーマー)),
+				createMission("制御不能 極級", 7, 70,
+						Arrays.asList(PlatinumChar.機甲士リッカ, SliverChar.暗殺者セシリー, SliverChar.ドワーフ戦士グスタフ, PlatinumChar.プラチナアーマー)),
+				createMission("烈火 神級", 2, 100,
+						Arrays.asList(GoldChar.金の聖霊,PlatinumChar.白金の聖霊, BlackChar.黒の聖霊)),
+				createMission("再起動 神級", 12, 90,
+						Arrays.asList(PlatinumChar.機甲士リッカ, SliverChar.格闘家ダン, SliverChar.海賊ジョヴァンニ, ItemChar.ダイヤ))
+		));
+		
+		Daily daily29 = new Daily("呪術師と妖魔の女王", 28);
+		daily29.setMissions(Arrays.asList(
+				createMission("淀んだ空気", 1, 20, Arrays.asList(IronChar.一般兵A魔法J2,TongChar.銅の聖霊 ,ItemChar.花束)),
+				createMission("呪術師の呪い", 2, 25,
+						Arrays.asList(PlatinumChar.忘我の呪術師レヴィ, SliverChar.魔術師パレス, SliverChar.銀の聖霊)),
+				createMission("呪術師再び", 3, 30,
+						Arrays.asList(PlatinumChar.忘我の呪術師レヴィ, SliverChar.魔女カリオペ, BlackChar.黒の聖霊, ItemChar.魔水晶)),
+				createMission("卑劣な罠", 7, 55,
+						Arrays.asList(PlatinumChar.忘我の呪術師レヴィ, SliverChar.槍騎兵エレイン, SliverChar.癒し手アリサ, ItemChar.花束J2)),
+				createMission("ゴブリンクイーン", 7, 70,
+						Arrays.asList(PlatinumChar.忘我の呪術師レヴィ,  SliverChar.忍者サイゾウ,SliverChar.司祭シャロン,
+								PlatinumChar.白金の聖霊)),
+				createMission("暴走する力", 9, 12, Arrays.asList(PlatinumChar.忘我の呪術師レヴィ, SliverChar.足軽頭サノスケ,
+						PlatinumChar.プラチナアーマー, ItemChar.ルビーJ2))
+		));
+		
+		Daily daily30 = new Daily("私掠船長と魔の海域", 29);
+		daily30.setMissions(Arrays.asList(
+				createMission("私掠船の船長", 1, 20, Arrays.asList(PlatinumChar.私掠船長サブリナ, TongChar.銅の聖霊, ItemChar.花束)),
+				createMission("マーマン", 2, 25, Arrays.asList(PlatinumChar.私掠船長サブリナ, SliverChar.弓兵ダニエラ, SliverChar.銀の聖霊)),
+				createMission("投槍の一撃", 3, 30,
+						Arrays.asList(PlatinumChar.私掠船長サブリナ, SliverChar.海賊ジョヴァンニ, BlackChar.黒の聖霊, ItemChar.魔水晶)),
+				createMission("挟撃の甲板", 4, 50,
+						Arrays.asList(SliverChar.山賊頭モーティマ, SliverChar.癒し手ドルカ, GoldChar.金の聖霊, ItemChar.花束J2)),
+				createMission("魔神ウェパル", 7, 55,
+						Arrays.asList(PlatinumChar.私掠船長サブリナ, SliverChar.魔術師パレス, SliverChar.魔法剣士リカルド,
+								PlatinumChar.白金の聖霊)),
+				createMission("それぞれの自由", 9, 12, Arrays.asList(PlatinumChar.私掠船長サブリナ, SliverChar.錬金術士テルマ,
+						PlatinumChar.プラチナアーマー, ItemChar.ルビーJ2))
+		));
+		
+		Daily daily31 = new Daily("ヴァンパイアと聖なる復讐者", 30);
+		daily31.setMissions(Arrays.asList(
+				createMission("灰より出る者", 1, 20, Arrays.asList(PlatinumChar.聖なる復讐者ルマリア, TongChar.銅の聖霊, ItemChar.花束)),
+				createMission("ヴァンパイアを追う者", 2, 25,
+						Arrays.asList(PlatinumChar.聖なる復讐者ルマリア, SliverChar.弓兵ソーマ, SliverChar.銀の聖霊)),
+				createMission("老練なる神官戦士", 3, 40,
+						Arrays.asList(PlatinumChar.聖なる復讐者ルマリア, SliverChar.神官戦士ニコラウス, BlackChar.黒の聖霊, ItemChar.魔水晶)),
+				createMission("絡みつく羽音", 4, 50,
+						Arrays.asList(SliverChar.吸血鬼狩人フーリ, SliverChar.癒し手ドルカ, GoldChar.金の聖霊, ItemChar.花束J2)),
+				createMission("公爵の家畜部屋", 7, 55,
+						Arrays.asList(PlatinumChar.聖なる復讐者ルマリア, SliverChar.女盗賊ハリッサ, SliverChar.妖精郷の戦士ロザリー,
+								PlatinumChar.白金の聖霊)),
+				createMission("ルマリアの決意", 9, 12, Arrays.asList(PlatinumChar.聖なる復讐者ルマリア, SliverChar.海賊ヴェロッテ,
+						PlatinumChar.プラチナアーマー, ItemChar.ルビーJ2))
+		));
+		
+		Daily daily32 = new Daily("妖魔の女王と戦術の天才", 31);
+		daily32.setMissions(Arrays
+				.asList(createMission("天才の集団戦術", 1, 20, Arrays.asList(IronChar.一般兵A重装, TongChar.銅の聖霊, ItemChar.花束)),
+						createMission("天才の機動戦術", 2, 25,
+								Arrays.asList(PlatinumChar.天才戦術家ヘレナ, SliverChar.見習い騎兵ミーシャ, SliverChar.銀の聖霊)),
+						createMission("天才の火力戦術", 3, 30,
+								Arrays.asList(PlatinumChar.天才戦術家ヘレナ, SliverChar.ドワーフ戦士グスタフ, BlackChar.黒の聖霊, ItemChar.魔水晶)),
+						createMission("天才の中央突破戦術", 4, 50,
+								Arrays.asList(PlatinumChar.天才戦術家ヘレナ, SliverChar.足軽頭サノスケ, SliverChar.弓兵ソーマ,
+										ItemChar.花束J2)),
+						createMission("天才の工作戦術", 7, 55,
+								Arrays.asList(PlatinumChar.天才戦術家ヘレナ, SliverChar.暗殺者セシリー,SliverChar.山賊頭モーティマ, 
+										PlatinumChar.白金の聖霊)),
+						createMission("女王の怒り", 9, 12, Arrays.asList(PlatinumChar.天才戦術家ヘレナ, SliverChar.魔術師パレス,
+								PlatinumChar.プラチナアーマー, ItemChar.ルビーJ2))
+		));
+		
+		Daily daily33 = new Daily("魔界蟻と囚われた男達", 32);
+		daily33.setMissions(Arrays.asList(
+				createMission("暴れる山賊たち", 1, 20,
+						Arrays.asList(PlatinumChar.冒険者オスカー, SliverChar.山賊頭モーティマ, ItemChar.樽ビール)),
+				createMission("操られし戦士", 2, 25, Arrays.asList(PlatinumChar.冒険者ジェイク, SliverChar.盗賊バラッド, SliverChar.銀の聖霊)),
+				createMission("操られし冒険者", 3, 30,
+						Arrays.asList(SliverChar.弓騎兵ミゲル, SliverChar.足軽頭サノスケ, BlackChar.黒の聖霊, ItemChar.魔水晶)),
+				createMission("囚われた男達", 4, 50,
+						Arrays.asList(PlatinumChar.冒険者オスカー, PlatinumChar.冒険者ジェイク, SliverChar.海賊ジョヴァンニ, ItemChar.花束J2)),
+				createMission("魔界アリの女王", 7, 55,
+						Arrays.asList(PlatinumChar.冒険者オスカー, PlatinumChar.冒険者ジェイク, PlatinumChar.プラチナアーマー,
+								PlatinumChar.白金の聖霊)),
+				createMission("女王蟻の執念", 9, 12, Arrays.asList(PlatinumChar.冒険者オスカー, PlatinumChar.冒険者ジェイク,
+						SliverChar.神官戦士ニコラウス, ItemChar.極上酒J2))
+				));
+		
+		Daily daily34 = new Daily("天使たちの陰謀", 33);
+		daily34.setMissions(Arrays.asList(
+				createMission("神託の聖職者", 1, 20,
+						Arrays.asList(PlatinumChar.聖職者セレイナ, TongChar.銅の聖霊, ItemChar.花束)),
+				createMission("接舷の白兵戦", 2, 25,
+						Arrays.asList(PlatinumChar.聖職者セレイナ, SliverChar.魔導師ヴァレリー, SliverChar.銀の聖霊)),
+				createMission("森の中の追走劇", 4, 30,
+						Arrays.asList(PlatinumChar.聖職者セレイナ, SliverChar.神官戦士ニコラウス, BlackChar.黒の聖霊, ItemChar.魔水晶)),
+				createMission("霧に包まれた森", 5, 40,
+						Arrays.asList( SliverChar.弓兵ソーマ,SliverChar.見習い騎兵ミーシャ, GoldChar.金の聖霊, ItemChar.花束J2)),
+				createMission("大天使長と空舞う天使たち", 7, 55,
+						Arrays.asList(PlatinumChar.聖職者セレイナ, SliverChar.堕天使ニエル, SliverChar.癒し手アリサ, PlatinumChar.白金の聖霊)),
+				createMission("さらわれたセレイナ", 9, 12,
+						Arrays.asList(PlatinumChar.聖職者セレイナ, SliverChar.魔術師パレス, PlatinumChar.プラチナアーマー, ItemChar.ルビーJ2))
+		));
+		
+		Daily daily35 = new Daily("魔蝿の森と呪われた番人", 34);
+		daily35.setMissions(Arrays.asList(
+				createMission("魔の森の住人", 1, 20, Arrays.asList(PlatinumChar.闇の森の番人アイーダ, TongChar.密林の老練射手ガガ, ItemChar.花束)),
+				createMission("魔の森のトレント", 2, 25,
+						Arrays.asList(PlatinumChar.闇の森の番人アイーダ, SliverChar.弓兵ダニエラ, SliverChar.銀の聖霊)),
+				createMission("魔神の信奉者", 4, 30,
+						Arrays.asList(SliverChar.密林の弓騎兵ルナール, SliverChar.盗賊バラッド, BlackChar.黒の聖霊, ItemChar.魔水晶)),
+				createMission("邪悪なる共同戦線", 5, 40,
+						Arrays.asList(PlatinumChar.闇の森の番人アイーダ, SliverChar.密林の槍騎兵チグリ, GoldChar.金の聖霊, ItemChar.花束J2)),
+				createMission("復活の魔蝿", 7, 55,
+						Arrays.asList(PlatinumChar.闇の森の番人アイーダ, SliverChar.狂戦士フューネス,SliverChar.魔女カリオペ, 
+								PlatinumChar.白金の聖霊)),
+				createMission("信仰の果て", 9, 12, Arrays.asList(PlatinumChar.闇の森の番人アイーダ, SliverChar.密林の守護者ダナン,
+						PlatinumChar.プラチナアーマー, ItemChar.ルビーJ2	))
+		));
+		
+				
 
 
 		dailyList = new ArrayList<Daily>();
 		dailyList.addAll(Arrays.asList(
 				daily,daily2,daily3,daily4,daily5,daily6,daily7,daily8,daily10
 				,daily11,daily12,daily13,daily14,daily15,daily16,daily17,daily18,daily19,daily20
-				,daily21,daily22,daily23,daily24,daily25
+				,daily21,daily22,daily23,daily24,daily25,daily26,daily27,daily28,daily29,daily30
+				,daily31,daily32,daily33,daily34,daily35
 				));
 
 		List<String> charClassList=new ArrayList<String>();
@@ -274,8 +425,8 @@ public class AigisCharGsonGenerder {
 		}
 		
 		
-		List<String> ccliwai=Arrays.asList("舞娘","暗黑骑士","龙骑","好感物","巫女","水兵","天马","咒术","游侠");
-		List<String> liwai=Arrays.asList("铁圣灵","铜圣灵","魔水晶","银圣灵","金圣灵","白圣灵","黑圣灵","虹圣灵","金桶","白桶");
+		List<String> ccliwai=Arrays.asList("舞娘","暗黑骑士","龙骑","好感物","巫女","水兵","天马","咒术","游侠","金桶");
+		List<String> liwai=Arrays.asList("铁圣灵","铜圣灵","魔水晶","银圣灵","金圣灵","白圣灵","黑圣灵","虹圣灵","白桶");
 		
 		List<charMissionSummary> summaries = new ArrayList<charMissionSummary>();
 		for (String charName : charClassList) {

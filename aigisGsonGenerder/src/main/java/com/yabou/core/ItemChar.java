@@ -18,6 +18,7 @@ public class ItemChar {
 	final public static Char 樽ビール = new Char("008", "啤酒", CharClass.好感物,"item");
 	final public static Char 一般ワイン = new Char("009", "红酒", CharClass.好感物,"item");
 	final public static Char 極上酒 = new Char("010", "極上酒", CharClass.好感物,"item");
+	final public static Char 極上酒J2 = new Char("010", "極上酒（判定2次）", CharClass.好感物,"item");
 	final public static Char 千年ワイン = new Char("011", "千年ワイン", CharClass.好感物,"item");
 	
 	
