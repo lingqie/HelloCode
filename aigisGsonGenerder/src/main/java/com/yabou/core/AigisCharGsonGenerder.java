@@ -440,8 +440,10 @@ public class AigisCharGsonGenerder {
 								if ((item.getCclass().equals(CharClass.valueOf(charName))&&item.getRank().equals("sliver"))||
 										((item.getCclass().equals(CharClass.valueOf(charName)))&&(liwai.contains(charName)))) {
 									List<Mission> m1 = cms.getMissions();
-									m1.add(m);
-									cms.setMissions(m1);
+									if(!m1.contains(m)){
+										m1.add(m);
+										cms.setMissions(m1);
+									}
 								}
 							}
 						}

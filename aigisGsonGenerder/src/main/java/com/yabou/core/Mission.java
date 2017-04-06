@@ -2,7 +2,7 @@ package com.yabou.core;
 
 import java.util.List;
 
-public class Mission {
+public class Mission{
 	private int tiLi;
 	private int meiLi;
 	private String missionJPName;
@@ -57,5 +57,11 @@ public class Mission {
 	public void setDailyJPName(String dailyJPName) {
 		this.dailyJPName = dailyJPName;
 	}	
+	
+	@Override
+	public boolean equals(Object obj) {
+		Mission other=(Mission)obj;
+		return this.dailyJPName.equals(other.dailyJPName)&&this.missionJPName.equals(other.missionJPName);
+	}
 	
 }
