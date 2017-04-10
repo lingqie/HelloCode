@@ -307,7 +307,7 @@ public class AigisCharGsonGenerder {
 				createMission("ゴブリンクイーン", 7, 70,
 						Arrays.asList(PlatinumChar.忘我の呪術師レヴィ,  SliverChar.忍者サイゾウ,SliverChar.司祭シャロン,
 								PlatinumChar.白金の聖霊)),
-				createMission("暴走する力", 9, 12, Arrays.asList(PlatinumChar.忘我の呪術師レヴィ, SliverChar.足軽頭サノスケ,
+				createMission("暴走する力", 12, 90, Arrays.asList(PlatinumChar.忘我の呪術師レヴィ, SliverChar.足軽頭サノスケ,
 						PlatinumChar.プラチナアーマー, ItemChar.ルビーJ2))
 		));
 		
@@ -322,7 +322,7 @@ public class AigisCharGsonGenerder {
 				createMission("魔神ウェパル", 7, 55,
 						Arrays.asList(PlatinumChar.私掠船長サブリナ, SliverChar.魔術師パレス, SliverChar.魔法剣士リカルド,
 								PlatinumChar.白金の聖霊)),
-				createMission("それぞれの自由", 9, 12, Arrays.asList(PlatinumChar.私掠船長サブリナ, SliverChar.錬金術士テルマ,
+				createMission("それぞれの自由", 12, 90, Arrays.asList(PlatinumChar.私掠船長サブリナ, SliverChar.錬金術士テルマ,
 						PlatinumChar.プラチナアーマー, ItemChar.ルビーJ2))
 		));
 		
@@ -338,7 +338,7 @@ public class AigisCharGsonGenerder {
 				createMission("公爵の家畜部屋", 7, 55,
 						Arrays.asList(PlatinumChar.聖なる復讐者ルマリア, SliverChar.女盗賊ハリッサ, SliverChar.妖精郷の戦士ロザリー,
 								PlatinumChar.白金の聖霊)),
-				createMission("ルマリアの決意", 9, 12, Arrays.asList(PlatinumChar.聖なる復讐者ルマリア, SliverChar.海賊ヴェロッテ,
+				createMission("ルマリアの決意", 12, 90, Arrays.asList(PlatinumChar.聖なる復讐者ルマリア, SliverChar.海賊ヴェロッテ,
 						PlatinumChar.プラチナアーマー, ItemChar.ルビーJ2))
 		));
 		
@@ -355,7 +355,7 @@ public class AigisCharGsonGenerder {
 						createMission("天才の工作戦術", 7, 55,
 								Arrays.asList(PlatinumChar.天才戦術家ヘレナ, SliverChar.暗殺者セシリー,SliverChar.山賊頭モーティマ, 
 										PlatinumChar.白金の聖霊)),
-						createMission("女王の怒り", 9, 12, Arrays.asList(PlatinumChar.天才戦術家ヘレナ, SliverChar.魔術師パレス,
+						createMission("女王の怒り", 12, 90, Arrays.asList(PlatinumChar.天才戦術家ヘレナ, SliverChar.魔術師パレス,
 								PlatinumChar.プラチナアーマー, ItemChar.ルビーJ2))
 		));
 		
@@ -371,7 +371,7 @@ public class AigisCharGsonGenerder {
 				createMission("魔界アリの女王", 7, 55,
 						Arrays.asList(PlatinumChar.冒険者オスカー, PlatinumChar.冒険者ジェイク, PlatinumChar.プラチナアーマー,
 								PlatinumChar.白金の聖霊)),
-				createMission("女王蟻の執念", 9, 12, Arrays.asList(PlatinumChar.冒険者オスカー, PlatinumChar.冒険者ジェイク,
+				createMission("女王蟻の執念", 12, 90, Arrays.asList(PlatinumChar.冒険者オスカー, PlatinumChar.冒険者ジェイク,
 						SliverChar.神官戦士ニコラウス, ItemChar.極上酒J2))
 				));
 		
@@ -387,7 +387,7 @@ public class AigisCharGsonGenerder {
 						Arrays.asList( SliverChar.弓兵ソーマ,SliverChar.見習い騎兵ミーシャ, GoldChar.金の聖霊, ItemChar.花束J2)),
 				createMission("大天使長と空舞う天使たち", 7, 55,
 						Arrays.asList(PlatinumChar.聖職者セレイナ, SliverChar.堕天使ニエル, SliverChar.癒し手アリサ, PlatinumChar.白金の聖霊)),
-				createMission("さらわれたセレイナ", 9, 12,
+				createMission("さらわれたセレイナ", 12, 90,
 						Arrays.asList(PlatinumChar.聖職者セレイナ, SliverChar.魔術師パレス, PlatinumChar.プラチナアーマー, ItemChar.ルビーJ2))
 		));
 		
@@ -403,7 +403,23 @@ public class AigisCharGsonGenerder {
 				createMission("復活の魔蝿", 7, 55,
 						Arrays.asList(PlatinumChar.闇の森の番人アイーダ, SliverChar.狂戦士フューネス,SliverChar.魔女カリオペ, 
 								PlatinumChar.白金の聖霊)),
-				createMission("信仰の果て", 9, 12, Arrays.asList(PlatinumChar.闇の森の番人アイーダ, SliverChar.密林の守護者ダナン,
+				createMission("信仰の果て", 12, 90, Arrays.asList(PlatinumChar.闇の森の番人アイーダ, SliverChar.密林の守護者ダナン,
+						PlatinumChar.プラチナアーマー, ItemChar.ルビーJ2	))
+		));
+		
+		Daily daily36 = new Daily("失われた竜の島", 35);
+		daily36.setMissions(Arrays.asList(
+				createMission("船上の偽王子", 1, 20, Arrays.asList(IronChar.一般兵A重装J2, TongChar.銅の聖霊, ItemChar.花束)),
+				createMission("竜人たちの島", 2, 25,
+						Arrays.asList(PlatinumChar.火竜のイグニス, SliverChar.盗賊バラッド, SliverChar.銀の聖霊)),
+				createMission("竜人の真意", 4, 30,
+						Arrays.asList(PlatinumChar.火竜のイグニス, SliverChar.弓兵ソーマ, BlackChar.黒の聖霊, ItemChar.魔水晶)),
+				createMission("島の飛竜", 5, 40,
+						Arrays.asList(PlatinumChar.火竜のイグニス, SliverChar.見習い騎兵ミーシャ, SliverChar.魔導師ヴァレリー, ItemChar.花束J2)),
+				createMission("竜の島の総力戦", 7, 55,
+						Arrays.asList(PlatinumChar.火竜のイグニス, SliverChar.海賊ヴェロッテ,SliverChar.傭兵クレイブ, 
+								PlatinumChar.白金の聖霊)),
+				createMission("大天使長と神獣の卵", 12, 90, Arrays.asList(PlatinumChar.火竜のイグニス, SliverChar.鋼鉄の女レアン,
 						PlatinumChar.プラチナアーマー, ItemChar.ルビーJ2	))
 		));
 		
@@ -415,7 +431,7 @@ public class AigisCharGsonGenerder {
 				daily,daily2,daily3,daily4,daily5,daily6,daily7,daily8,daily10
 				,daily11,daily12,daily13,daily14,daily15,daily16,daily17,daily18,daily19,daily20
 				,daily21,daily22,daily23,daily24,daily25,daily26,daily27,daily28,daily29,daily30
-				,daily31,daily32,daily33,daily34,daily35
+				,daily31,daily32,daily33,daily34,daily35,daily36
 				));
 
 		List<String> charClassList=new ArrayList<String>();
@@ -453,16 +469,12 @@ public class AigisCharGsonGenerder {
 			}
 		}
 		
-		 System.out.println(gson.toJson(summaries));
-//		System.out.println(gson.toJson(dailyList));
+//		 System.out.println(gson.toJson(summaries));
+		System.out.println(gson.toJson(dailyList));
 //		 System.out.println(gson.toJson(charClassList));
 	}
 	
-	
-	
-	
 	public static String getZhuZiInfo(String info){
-		
 		
 		return "";
 	}

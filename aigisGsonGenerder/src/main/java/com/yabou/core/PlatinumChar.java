@@ -9,6 +9,7 @@ public class PlatinumChar {
 	final public static Char 戦乙女エミリア = new Char("545", "戦乙女エミリア", CharClass.骑兵,"white");
 	final public static Char 獣人エイダ = new Char("547", "獣人エイダ", CharClass.盗贼,"white");
 	final public static Char 山賊娘ロロネ = new Char("554", "山賊娘ロロネ", CharClass.山贼,"white");
+	final public static Char 火竜のイグニス = new Char("555", "火竜のイグニス", CharClass.龙兵,"white");
 	final public static Char 剣豪モミジ = new Char("557", "剣豪モミジ", CharClass.武士,"white");
 	final public static Char 忍者アザミ = new Char("558", "忍者アザミ", CharClass.忍者,"white");
 	final public static Char 帝国天馬騎士イザベル = new Char("559", "帝国天馬騎士イザベル", CharClass.天马,"white");
